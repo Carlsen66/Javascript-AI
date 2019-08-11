@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pong</title>
+  <script language="javascript" type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script language="javascript" type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+
+  <script src="../lib/nn.js" type="text/javascript"></script>
+  <script src="../lib/matrix.js" type="text/javascript"></script>
+  <script src="ga.js" type="text/javascript"></script>
+  <script src="sketch.js" type="text/javascript"></script>
+  <script src="puck.js" type="text/javascript"></script>
+  <script src="paddle.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+  <div id="canvascontainer"></div>
+  <p>
+    Speed: <input id="speedSlider" type="range" min="1" max="200" value="1"> <span id="speed">5</span>
+    <br /> High left score: <span id="hsl">0</span>
+    <br /> All time high score: <span id="ahsl">0</span>
+    <br /> High right score: <span id="hsr">0</span>
+    <br /> All time high score: <span id="ahsr">0</span>
+    <br /> Game score: <span id="gs">0</span>
+    Puck speed: <input id="speedSlider" type="range" min="5" max="12" value="1"> <span id="speed">10</span>
+  </p>
+  <p>
+    <button id="best">run best</button>
+
+    <button id="savebest">Save best brain</button>
+
+    <button id="loadbest">Load best brain</button>
+    <button id="manuel">Manual Mode</button>
+  </p>
+
+</body>
+
+</html>
